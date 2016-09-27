@@ -1,0 +1,92 @@
+/* responsive website project to balonismoboituva.com.br
+   https://github.com/fernandoted/balonismoboituva
+   author: Fernando Ted
+   09-08-16 */
+
+.footer {
+	background: $red;
+	@include shadow-in;
+	border-top: 5px solid #85000D;
+	padding-top: 30px;
+	@extend .col-xs-12;
+	
+	.footer-info-block {
+		text-align: center;
+		@extend .col-xs-12;
+		@extend .col-lg-5;
+	
+		.footer-info-wrap {
+			margin-bottom: 10px;
+			
+			.footer-text {
+				color: $yellow;
+				font-size: .8rem;
+				margin-bottom: 0;
+				
+				.footer-email {
+					color: $white;
+					transition: ease-in-out .3s;
+				}
+				.footer-email:hover {
+					color: $yellow;
+				}
+			}
+		}
+	}
+	
+	.logo-footer-wrap {
+		/*width: 50%;*/
+		padding: 10px 0 30px 0;
+		/*margin: 0 auto;*/
+		@extend .col-xs-12;
+		@extend .col-lg-5;
+		
+		.logo-footer {
+			@extend .img-fluid;
+			@extend .m-x-auto;
+			@extend .pull-lg-right;
+			width: 50%;
+		}
+	}
+}
+
+/* TABLET */
+@media(min-width: map-get($grid-breakpoints, md)){
+	.footer {
+		.logo-footer-wrap {
+			.logo-footer {
+				width: 30%;
+			}
+		}
+	}
+}
+
+/* DESKTOP */
+@media(min-width: map-get($grid-breakpoints, lg)){
+	.footer {
+		padding-bottom: 15px;
+		
+		.footer-info-block {
+			text-align: left;
+		}
+		.footer-info-block {
+			float: left;
+			
+			.footer-info-wrap {
+				
+				.footer-text {
+					padding-left: 40px;
+				}
+			}
+		}
+		.logo-footer-wrap {
+			float: right;
+			padding-top: 0;
+			padding-right: 55px;
+			
+			.logo-footer {
+				width: 50%;
+			}
+		}
+	}
+}

@@ -1,0 +1,165 @@
+/* responsive website project to balonismoboituva.com.br
+   https://github.com/fernandoted/balonismoboituva
+   author: Fernando Ted
+   09-08-16 */
+
+@import "variables";
+
+
+.content {
+	/* paypal */
+	.paypal {
+		padding-right: 0;
+		padding-left: 0;
+		@extend .col-xs-12;
+		@extend .col-lg-9;
+		@extend .offset-lg-3;
+		
+		.paypal-title {
+			text-align: center;
+			font-size: 1rem;
+			color: $text-color;
+		}
+		.paypal-form {
+			@extend .col-xs-12;
+			@extend .col-md-6;
+			@extend .offset-md-3;
+			
+			.paypal-label {
+				margin-bottom: 0;
+				font-size: .8rem;
+				font-style: italic;
+			}
+			.paypal-option {
+				height: 30px;
+				font-size: .9rem;
+				max-width: 100%;
+				margin-bottom: 20px;
+				border: $border-faq;
+				@include shadow-light;
+			}
+			.paypal-field {
+				width: 100%;
+				border: $border-faq;
+				@include shadow-light;
+				margin-bottom: 20px;
+			}
+			.paypal-image {
+				width: 50%;
+				padding: 0 0 50px 0;
+				@extend .col-xs-12;
+				@extend .m-x-auto;
+			}
+			.paypal-button {
+				margin-bottom: 30px;
+			}
+		}
+	}
+	/* contact */
+	.contact-form-wrap {
+		@extend .col-xs-12;
+		@extend .col-md-8;
+		@extend .offset-md-2;
+		@extend .col-lg-7;
+		@extend .offset-lg-4;
+		padding: 0;
+		
+		.contact-form-block {
+			padding-top: 15px;
+				
+			.contact-form-label {
+				color: $soft-gray;
+				font-size: .8rem;
+				text-align: left;
+				margin-bottom: 0;
+			}
+			.contact-form-field {
+				/*@extend .col-xs-12;*/
+				width: 100%;
+				border: $border-faq;
+				@include shadow-light;
+			}
+			.phone-wrap {
+				@extend .clearfix;
+					
+				.ddd {
+					width: 20%;
+					border: $border-faq;
+					@include shadow-light;
+				}
+				.phone-number {
+					float: right;
+					width: 75%;
+					border: $border-faq;
+					@include shadow-light;
+				}
+			}
+		}
+			
+		.buttons-wrap {
+			margin-bottom: 40px;
+			
+			.form-button-primary, .form-button-danger {
+				@extend .btn;
+				@extend .btn-sm;
+			}
+			.form-button-primary {
+				@extend .btn-outline-primary;
+			}
+			.form-button-danger {
+				@extend .btn-outline-danger;
+			}
+		}
+	}
+}
+
+
+
+
+/* TABLET */
+/* paypal */
+@media(min-width: map-get($grid-breakpoints, md)){
+	.content {
+	
+		.paypal {
+			text-align: center;
+		}
+		
+		.contact-form-wrap {
+			
+			.contact-form-block {
+				.phone-wrap {
+					
+					.ddd {
+						float: left;
+						width: 10%;
+						margin-right: 20px;
+
+					}
+					.phone-number {
+						float: left;
+						width: 50%;
+					}
+				}
+			}
+		}
+	}
+}
+
+/* DESKTOP */
+/* paypal */
+@media(min-width: map-get($grid-breakpoints, md)){
+	.content {
+		
+		.paypal {
+			padding-top: 30px;
+			
+			.paypalform {
+				
+				.paypal-field {
+					width: 400px;
+				}
+			}
+		}
+	}
+}

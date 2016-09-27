@@ -1,0 +1,167 @@
+/* responsive website project to balonismoboituva.com.br
+   https://github.com/fernandoted/balonismoboituva
+   author: Fernando Ted
+   09-08-16 */
+
+@import "variables";
+
+.link {
+	@include text;
+	font-weight: bold;
+	color: $link-color;
+	transition: ease-in-out .3s;
+		
+	&:hover {
+		color: $text-color;
+	}
+}
+
+/* text content */
+.content {
+	background: $background-content-color;
+	padding-top: 40px;
+	padding-bottom: 30px;
+	@extend .col-xs-12;
+	
+	.title {
+		text-align: left;
+		padding: 20px 0 10px 0;
+		font-size: 1.5rem;
+		@include text;
+	}
+	
+	.subtitle {
+		text-align: left;
+		font-style: italic;
+		font-weight: bold;
+		font-size: 1.2rem;
+		padding: 5px 0;
+		@include text;
+	}
+	
+	.paragraph {
+		text-align: left;
+		padding-bottom: 10px;
+		font-size: 1rem;
+		@include text;
+	}
+	
+	.refs-wrap {
+		@extend .col-xs-12;
+	
+			.refs, .update {
+				font-size: .8rem;
+				@include text;
+			}
+			.refs {
+				text-align: left;
+			}
+			.update {
+				text-align: right;
+				font-weight: bold; 
+			}
+		}
+	
+			
+	.content-img-right, .content-img-left {
+		padding-bottom: 20px;
+		margin: 0;
+		@extend .img-fluid;
+		@extend .m-x-auto;
+	}
+	
+	.content-img-right {
+		@extend .pull-md-right;
+	}
+	
+	.content-img-left {
+		@extend .pull-md-left;
+	}
+	
+	.wrap-text-img {
+		@extend .clearfix;
+	}
+	
+	.hotel-wrap {
+		@extend .col-xs-12;
+		@extend .col-lg-9;
+		@extend .offset-lg-3;
+		padding-bottom: 20px;
+		
+		.hotel-title {
+			@extend .subtitle;
+			font-style: normal;
+			text-align: center;				
+		}
+		.hotel-address {
+			@extend .paragraph;
+			text-align: center;
+			padding-bottom: 0;
+		}
+		.hotel-link {
+			@include text;
+			color: $red;
+			transition: ease-in-out .3s;
+			&:hover {
+				color: $text-color;
+			}
+		}
+		.hotel-info {
+			@extend .paragraph;
+			text-align: center;
+			font-style: italic;
+			margin: 5px 0 0 0;
+			font-size: .9rem;
+		}
+	}
+}
+
+/* TABLET */
+@media(min-width: map-get($grid-breakpoints, md)){
+	.content {
+		padding-right: 40px;
+		padding-left: 40px;
+		
+		.title {
+		text-align: center;
+		}
+		
+		.content-img-right {
+			padding-left: 40px;
+		}
+		
+		.content-img-left {
+			padding-right: 40px;
+		}
+		
+		.hotel-wrap {
+			text-align: center;
+			
+			.hotel-info {
+				padding-right: 100px;
+				padding-left: 100px;
+			}
+		}
+	}
+}
+
+/* DESKTOP */
+@media(min-width: map-get($grid-breakpoints, lg)){
+	.content {
+		padding-right: 70px;
+		padding-left: 70px;
+		
+		.paragraph {
+			text-indent: 30px;
+			margin-bottom: 0;
+		}
+		
+		.refs-wrap {
+			padding-top: 20px;
+		}
+		
+		.hotel-wrap {
+			padding-bottom: 40px;
+		}
+	}
+}

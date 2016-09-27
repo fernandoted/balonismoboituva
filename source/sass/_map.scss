@@ -1,0 +1,75 @@
+/* responsive website project to balonismoboituva.com.br
+   https://github.com/fernandoted/balonismoboituva
+   author: Fernando Ted
+   09-08-16 */
+
+
+.content {
+	
+	.map-img-wrap {
+		padding: 0 0 20px 0;
+		@extend .col-xs-12;
+		
+		.map-img {
+			max-width: 100%;
+			@extend .img-fluid;
+			@extend .m-x-auto;
+		}
+	}
+	
+	.google-map-wrap {
+		padding: 0;
+		@extend .col-xs-12;
+		@extend .col-lg-8;
+		@extend .offset-lg-4;
+		
+		.google-map {
+			width: 100%;
+			height: 300px;
+		}
+	}
+	
+	.googlemaps-link-wrap {
+		@extend .col-xs-12;
+		text-align: right;
+		
+		.googlemaps-link {
+			font-weight: normal;
+			font-size: .8rem;
+			@extend .link;
+		}
+	}
+}
+
+/* TABLET */
+@media(min-width: map-get($grid-breakpoints, md)){
+	.content {
+		.googlemaps-link-wrap {
+			
+			.googlemaps-link {
+				padding-right: 0;
+			}
+		}
+	}
+}
+
+/* DESKTOP */
+@media(min-width: map-get($grid-breakpoints, lg)){
+	.content {
+	
+		.map-img-wrap {
+			padding: 20px 0 30px 0;
+		}
+		
+		.google-map-wrap {
+			padding-right: 55px;
+		}
+		
+		.googlemaps-link-wrap {
+			
+			.googlemaps-link {
+				padding-right: 40px;
+			}
+		}
+	}
+}

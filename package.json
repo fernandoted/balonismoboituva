@@ -1,0 +1,34 @@
+{
+  "name": "balonismoboituva",
+  "version": "1.0.0",
+  "description": "responsive project to website balonismoboituva.com.br",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fernandoted/balonismoboituva.git"
+  },
+  "keywords": [
+    "responsive",
+    "bootstrap",
+    "responsive",
+    "layout",
+    "responsive",
+    "design",
+    "fernando",
+    "ted"
+  ],
+  "author": "fernando ted",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fernandoted/balonismoboituva/issues"
+  },
+  "homepage": "https://github.com/fernandoted/balonismoboituva#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-notify": "^2.2.0",
+    "gulp-sass": "^2.3.2"
+  }
+}

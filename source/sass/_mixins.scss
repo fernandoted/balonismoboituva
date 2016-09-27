@@ -1,0 +1,54 @@
+/* responsive website project to balonismoboituva.com.br
+   https://github.com/fernandoted/balonismoboituva
+   author: Fernando Ted
+   09-08-16 */
+
+/* box shadows */
+@mixin shadow {
+	-webkit-box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.4);
+	-moz-box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.4);
+	box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.4);
+}
+
+@mixin shadow-light {
+	-webkit-box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.2);
+	-moz-box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.2);
+	box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.2);
+}
+
+@mixin shadow-in {
+	-webkit-box-shadow: inset 0px 0px 15px 0px rgba(0,0,0,0.5);
+	-moz-box-shadow: inset 0px 0px 15px 0px rgba(0,0,0,0.5);
+	box-shadow: inset 0px 0px 15px 0px rgba(0,0,0,0.5);
+}
+
+/* menu style */
+@mixin menu-title-wrap {
+	text-align: center;
+	padding: 10px 0 5px 0;
+	border-bottom: 0.5px solid $soft-gray;
+}
+
+@mixin menu-title {
+	font-size: 1.2rem;
+	color: #8A8788;
+}
+
+@mixin menu-item {
+	border-bottom: 0.5px solid $dark-gray;
+	/*padding: 5px 0 5px 10px;*/
+}
+
+@mixin menu-link {
+	font-size: 0.8rem;
+	color: $soft-gray;
+}
+
+/* text style */
+@mixin text {
+	font-family: $text-font;
+	color: $text-color;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	text-rendering:  optimizeLegibility;
+}

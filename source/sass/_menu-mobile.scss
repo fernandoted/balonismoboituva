@@ -1,0 +1,120 @@
+/* responsive website project to balonismoboituva.com.br
+   https://github.com/fernandoted/balonismoboituva
+   author: Fernando Ted
+   09-08-16 */
+
+
+/* offcanvas */
+.mobile-menu-wrap {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	right: -100%;
+	top: 0;
+	background: $background-menu-color;
+	overflow: scroll;
+	z-index: 1;
+	@include transition(left, .8s cubic-bezier(0.77, 0, 0.175, 1));
+	
+	.mobile-menu {
+		
+		.close-button-wrap {
+			height: 50px;
+			@extend .col-xs-5;
+			@extend .offset-xs-7;
+			
+			.close-button {
+				float: right;
+				padding-top: 20px;
+				color: $soft-gray;
+				
+				.close-button-icon {
+					padding-right: 5px;
+				}
+			}
+		}
+	
+		.mobile-menu-items {
+			padding-left: 0;
+			
+			.mobile-menu-title-wrap {
+				@include menu-title-wrap;
+			
+				.mobile-menu-title {
+					@include menu-title;
+				}
+			}
+			
+			.mobile-menu-item {
+				@include menu-item;
+				
+				.mobile-menu-link {
+					display: block;
+					padding: 5px 20px;
+					@include menu-link;
+					
+					&:hover {
+						background-color: $light-gray;
+						color: $dark-gray;
+					}
+				}
+			}
+		}
+	}
+}
+
+.open-mobile-menu-wrap {
+	&:after {
+		content: "";
+		position: fixed;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		background-color: rgba(0,0,0,.4);
+	}
+	.mobile-menu-wrap {
+		right: 0;
+	}
+}
+
+.wrap .header {
+	.menu-mobile {
+		@extend .col-xs-12;
+		@extend .col-md-6;
+	
+		.menu-bars-wrap {
+			padding-top: 20px;
+			@extend .col-xs-2;
+			@extend .offset-xs-10;
+			
+			.menu-bars-link {
+				color: $red;
+				font-size: 1.5rem;
+			}
+		}
+	}
+}
+
+
+/* TABLET */
+@media(min-width: map-get($grid-breakpoints, md)){
+	.mobile-menu-wrap {
+		width: 50%;
+	}
+	
+	.wrap .header {
+		.menu-mobile {
+			float: right;
+		}
+	}
+}
+
+/* DESKTOP */
+@media(min-width: map-get($grid-breakpoints, lg)){
+	.wrap .header {
+		.menu-mobile {
+			display: none;
+		}
+	}
+}

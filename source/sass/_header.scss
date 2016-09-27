@@ -1,0 +1,97 @@
+/* responsive website project to balonismoboituva.com.br
+   https://github.com/fernandoted/balonismoboituva
+   author: Fernando Ted
+   09-08-16 */
+
+
+@import "variables";
+
+.wrap .header {
+	background: url(../../imagens/balloon-header-01.png) repeat;
+	/*height: 310px;*/
+	@extend .clearfix;
+	@include shadow-in;
+	
+	.logo-header {
+		@extend .col-xs-12;
+		
+		.logo-wrap {
+			@extend .col-xs-12;
+			@extend .col-md-4;
+			@extend .offset-md-4;
+			padding-right: 0;
+			padding-left: 0;
+		
+		
+			.logo-img {
+				width: 100%;
+				@extend .img-fluid;
+				@extend .m-x-auto;
+			}
+		}
+		
+		.slogan {
+			text-align: center;
+			@extend .col-xs-10;
+			@extend .offset-xs-1;
+				
+			.slogan-text {
+				color: $red;
+				font-size: 1.2rem;
+				padding-top: 10px;
+				margin-bottom: 20px;
+			}
+		}
+	}
+}
+
+/* TABLET */
+@media(min-width: map-get($grid-breakpoints, md)){
+	.wrap .header {
+		/*height: 220px;*/
+		
+		.wrap-header-contacts {
+			display: block;
+			font-size: .9rem;
+			
+			.header-contacts {
+				margin-bottom: 0;
+			}
+		}
+			
+		.logo-header {
+			float: left;
+			
+			.logo-wrap {
+			
+				.logo-img {
+					width: 80%;
+				}
+			}
+			
+			.slogan {
+					
+				.slogan-text {
+					padding-top: 5px;
+				}
+			}
+		}
+	}
+}
+
+/* DESKTOP */
+@media(min-width: map-get($grid-breakpoints, lg)){
+	.wrap .header {
+		/*height: 250px;*/
+			
+		.logo-header {
+			padding-top: 0;
+			
+			.logo-wrap {
+
+				.logo-img {
+				}
+			}
+		}
+	}
+}

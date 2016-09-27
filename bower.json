@@ -1,0 +1,30 @@
+{
+  "name": "balonismoboituva",
+  "description": "responsive project to website balonismoboituva.com.br",
+  "main": "index.js",
+  "authors": [
+    "fernando ted"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "responsive",
+    "bootstrap",
+    "responsive",
+    "layout",
+    "responsive",
+    "design",
+    "fernando",
+    "ted"
+  ],
+  "homepage": "https://github.com/fernandoted/balonismoboituva",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "picturefill": "^3.0.2"
+  }
+}

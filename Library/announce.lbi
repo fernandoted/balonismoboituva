@@ -1,0 +1,17 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">		
+	<div class="announce">
+        <div class="announce-title-wrap">
+                <h3 class="announce-title"><i class="fa fa-info-circle announce-icon"></i>&Uacute;ltimas Not&iacute;cias</h3>
+        </div>
+            <div class="announce-text-wrap">
+                <p class="announce-text"><i>Promo&ccedil;&atilde;o de Feriad&atilde;o Passeio de Bal&atilde;o em uma super oferta:</i></p>
+                <p class="announce-text"><i>Passeio de Bal&atilde;o de R$ 670,00 por R$ 382,00 em 7x s/ juros, ou &aacute; vista no dep&oacute;sito banc&aacute;rio R$ 343,00 por pessoa.</i></p>
+                <a class="announce-link" href="../promoferias.html" title="Oferta Passeio de Balão">saiba mais... </a>
+            </div>
+            <div class="announce-title-wrap">
+                <h3 class="announce-title"><i class="fa fa-youtube-play announce-icon" aria-hidden="true"></i>V&iacute;deos no Youtube</h3>
+            </div>
+            <div class="announce-text-wrap">
+            	<a class="announce-link" href="http://youtube.com/balonista" target="_blank">Vejam nossos v&iacute;deos..</a>
+            </div>
+        </div> <!-- announce class end -->
